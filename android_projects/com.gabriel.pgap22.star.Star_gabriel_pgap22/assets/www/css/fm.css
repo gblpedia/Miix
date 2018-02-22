@@ -1,0 +1,437 @@
+div.fm_page {
+    background-image: url("../images/bg/bokeh_iphone_home_s.png");
+    background-repeat: repeat-y;
+	/*background-size: contain;*/
+    
+	/*width:320px;*/
+}
+
+div.fm_orientation{
+	background-repeat: round;
+	/*background-size: contain;*/
+	/*width:320px; */
+}
+
+div.fm_header {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+#menuBtn span {
+    border-style: none;
+    border-radius: 0px;
+}
+
+a.fm_header_btn {
+    background-image: url("../images/icon/menu.png");
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    margin-top: auto;
+    margin-left: 30px;
+}
+
+a.fm_back_btn {
+    background-image: url("../images/icon/back.png");
+    background-size: cover;
+    width: 10px;
+    height: 15px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    position: absolute;
+	top: 5%;
+	left: 8%;
+}
+
+
+
+div.fm_content{
+	padding: 0px;
+	overflow-x: visible;
+}
+
+span.ui-btn-inner{
+	padding: 0.4em 20px;
+}
+
+a.fm_yellowBtn {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background: #ffe615;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffe615), to(#ED9900));
+	background: -webkit-linear-gradient(#ffe615, #ED9900);
+	background: -moz-linear-gradient(#ffe615, #ED9900);
+	background: -ms-linear-gradient(#ffe615, #ED9900);
+	background: -o-linear-gradient(#ffe615, #ED9900);
+	background: linear-gradient(#ffe615, #ED9900);
+	width: 270px;
+	height: 50px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+a.fm_yellowBtn_s{
+	
+	color: rgb(0, 0, 0);
+    font-size: 15px;
+    background: #ffe615;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffe615), to(#ED9900));
+	background: -webkit-linear-gradient(#ffe615, #ED9900);
+	background: -moz-linear-gradient(#ffe615, #ED9900);
+	background: -ms-linear-gradient(#ffe615, #ED9900);
+	background: -o-linear-gradient(#ffe615, #ED9900);
+	background: linear-gradient(#ffe615, #ED9900);
+	width: 235px;
+	height: 35px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+a.fm_yellowBtn_make_s{
+	
+	color: rgb(0, 0, 0);
+    font-size: 15px;
+    background: #ffe615;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffe615), to(#ED9900));
+	background: -webkit-linear-gradient(#ffe615, #ED9900);
+	background: -moz-linear-gradient(#ffe615, #ED9900);
+	background: -ms-linear-gradient(#ffe615, #ED9900);
+	background: -o-linear-gradient(#ffe615, #ED9900);
+	background: linear-gradient(#ffe615, #ED9900);
+	width: 235px;
+	height: 35px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    horizontal-align: middle;
+    position: absolute;
+    top: 320px;
+    left: 42.5px
+}
+
+
+div.fm_overlay {
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+	width: 300px;
+	height: 330px;
+}
+
+
+a.fm_grayBtn {
+    color: rgb(255);
+    font-size: 15px;
+    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	width: 270px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+a.fm_grayBtn_s{
+	color: rgb(255);
+    font-size: 15px;
+    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	width: 235px;
+	height: 35px;
+	border-radius: 5px;
+}
+
+a.fm_fbBtn {
+	color: rgb(255, 255, 255);
+	background: rgba(0,0,0,0);
+	background-image: url("../images/bg/fb_signin.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: normal;
+	background-size: cover;
+	width: 270px;
+	height: 52px;
+	padding: 0px;
+	border-style: none;
+	box-shadow: 0px 0px 0px 0px;
+	text-align: right;
+	position: absolute;
+	top: 330px;
+	left: 25px;
+	border-radius: 5px;
+}
+
+a.fm_toc {
+	font-size: 12px;
+	text-shadow: 0px 0px 0;
+	text-decoration: none;
+	position: absolute;
+	top: 420px;
+	left: 130px;
+}
+
+div.fm_toc_field {
+    color:rgb(255,255,255);
+    padding: 3.125%;
+    text-shadow: 0px 0px 0;
+    background:rgba(0,0,0, 0.3);
+    width: 88%;
+    height: 67.3914%;
+    border-radius: 5px;
+    overflow:scroll;
+    position: absolute;
+}
+
+#TOC_contentArea.ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 3.125%;
+}
+
+iframe.fm_video {
+    width: 320px;
+    height: 180px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: margin-box;
+}
+
+.fm_video_making {
+    width: 320px;
+    height: 180px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: margin-box;
+    background-image: url("../images/icon/waiting.png");
+    background-size: cover;
+}
+
+.fm_trashtalk {
+    width: 320px;
+    height: 180px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: margin-box;
+    background-image: url("../images/icon/empty.png");
+    background-size: cover;
+
+}
+
+ul.fm_videoList{
+    padding:0px;
+    margin:0px !important;
+}
+
+div.fm_videoItem {
+    background: rgb(0, 0, 0);
+    width: 320px;
+    min-height: 207.5px;
+	
+}
+
+li.fm_videoItem {
+    background: rgba(0, 0, 0, 0.3);
+    width: 320px;
+    min-height: 207.5px;
+	border-style: none;
+	padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.ui-dialog{
+    padding: 0px;
+}
+
+div.fm_setting_popup {
+    background-image: url("../images/bg/bokeh_iphone_home_s.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: none;
+    border-radius: 0px;
+	background-repeat: no-repeat;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	box-sizing: margin-box;
+	margin:0px auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div.ui-dialog-contain {
+    margin:0px;
+    top:0px;
+}
+
+img.fm_icon{
+    width: 10px;
+    height: 10px;
+}
+
+a.fm_setting_icon_mine{
+	background-image: url("../images/icon/m1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27.5%;
+    height: 18.3334%;
+	background-size: contain;
+	position: absolute;
+	top: 16.25%;
+    left: 36.25%;
+}
+
+a.fm_setting_icon_make{
+	background-image: url("../images/icon/m2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27.5%;
+    height: 18.3334%;
+    position: absolute;
+	background-size: contain;
+	top: 43.958833%;
+    left: 36.25%;
+}
+
+a.fm_setting_icon_setting{
+	background-image: url("../images/icon/m3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27.5%;
+    height: 18.3334%;
+    position: absolute;
+	background-size: contain;
+	top: 70.625%;
+    left: 36.25%;
+}
+
+
+span.fm_like_num {
+    font-size: 12px;
+}
+
+span.fm_comment_num {
+    font-size: 12px;
+}
+
+span.fm_txt{
+    font-size: 12px;
+	color: rgb(0,0,0);
+}
+
+span.fm_txt_noise{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 250px;
+    left: 70px
+}
+
+span.fm_txt_time{
+	float: right;
+    font-size: 12px;
+	color: rgb(0,0,0);
+}
+
+p.fm_txt{
+    font-size: 12px;
+}
+
+div.fm_collapsible{
+    background: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-top-style: none;
+	width: 320px;
+	min-height: 55px;
+}
+
+
+
+li.fm_listItem {
+    background: rgba(0, 0, 0, 0.3);
+	padding: 1px;
+}
+
+a.fm_collapsible_heading_toggle{
+    background: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-top-style: none;
+}
+
+div.fm_comment1 {
+	float: right;
+	width: 242.2px;
+	height: 57.5px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0);
+    background-image: url("../images/bg/comment_bg1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	padding-right: 2.5px;
+}
+div.fm_comment2 {
+	float: right;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0);
+    background-image: url("../images/bg/comment_bg2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 242.2px;
+	height: 57.5px;
+	padding-left: 10px;
+	padding-right: 2.5px;
+}
+
+img.fm_thumbnail {
+	width: 57.5px;
+	height: 57.5px;
+}
+
+h2.fm_comment_header {
+    background: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-top-style: none;
+}
+a.fm_settingBtn {
+    font-size: 7.5px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/*GZ*/
+.blackBtn {
+    background:rgba(0, 0, 0, 0.3);
+    margin:0;
+    text-align:center;
+    font-size:0px;
+}
+.blackBtn * {vertical-align:middle;}
+.blackBtn i {height:100%;
+    display:inline-block;
+}
+
+#photo_cropper_container > div {
+    margin:0 auto;
+}
+
+
+

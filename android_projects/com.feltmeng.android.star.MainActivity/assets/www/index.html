@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>夢蝶</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="cordova-2.1.0.js"></script>
+        <script src="childbrowser.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="mobileinit.js"></script>
+        <script src="jstorage.min.js"></script>
+        <!-- <script src="assets/js/custom-jqm-transitions.js"></script> -->
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    </head>
+<body class="container">
+    <div data-role="page" id="indexPg">
+        <div data-role="header">
+            <h1>我是大明星 PhoneGap2.1</h1>
+        </div>
+        <div data-role="content" id="contentArea">
+            <ul data-role="listview" class="ui-listview">
+                <li><a href="javascript:" onclick="FmMobile.authPopup.init()">Facebook登入</a></li>
+                <!-- <li><a href="auth_fb.html">Facebook登入</a></li> -->
+                <!-- <li><a href="#" onclick="FmMobile.authPopup.init()" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop">Facebook登入</a></li> -->
+                <li><a href="signin.html">會員登入</a></li>
+                <li><a href="signup.html">會員註冊</a></li>
+            </ul>
+            <!-- <div data-role="popup" id="authPopup" data-overlay-theme="a">
+                <iframe src="http://www.feltmeng.idv.tw:3000/signin_fb" width="480" height="320" seamless></iframe> 
+            </div>--> <!-- http://www.feltmeng.idv.tw:3000/signin_fb -->
+        </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+</body>
+</html>

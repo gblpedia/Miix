@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/jquery-ui.css"/> 
+        <link rel="stylesheet" href="./css/jquery.mobile-1.2.0.css"/>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="./lib/cordova-2.2.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./lib/jquery-1.8.2.min.js"></script>
+        <script src="./lib/jquery-ui.js"></script>
+        <script src="./lib/ChildBrowser.js"></script>
+        <script src="./lib/json2.js"></script>
+        <script src="./lib/jstorage.min.js"></script>
+        <script src="./lib/kinetic-v4.0.5.min.js"></script>
+        <script src="./lib/lufylegend-1.5.0.js"></script>
+        <script src="./lib/exif.js"></script>
+        <script src="./lib/binaryajax.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="common.js"></script>
+        <script src="megapix-image-gz.js"></script>
+        <script src="photo_cropper.js"></script>
+        <script src="movie_preview_math.js"></script>
+        <script src="simple_analytics.js"></script>
+        <script src="fmWidgets.js"></script>
+        <script src="FBConnect.js"></script>
+        <script src="mobileinit.js"></script>
+        <script src="mobileinit_movie_gen.js"></script>
+        <script src="./lib/jquery.mobile-1.2.0.js"></script>
+        <link rel="stylesheet" href="./css/fm.css"/>
+    </head>
+<body class="container">
+    <!-- Movie Preview Page-->
+    <div data-role="page" id="moviePreviewPg" class="fm_page">
+        <div data-role="header" class="fm_header">
+            <a href="menuPopup.html" id="menuBtn" style="margin-top:10px; margin-left:5px;" data-rel="dialog" class="fm_header_btn"></a>
+            <h1>影片預覽</h1>
+        </div>
+        <div data-role="content" id="moviePreviewPg_contentArea" class="fm_content">
+            <!-- <div id="uploading"></div> -->
+			<div id="moviePreviewArea" style="position:relative; width:100%; height:240px; background:rgba(0, 0, 0, 0.3);">
+                <div id="moviePreview" style="position:absolute; width:100%; top:12.5%"></div>
+            </div>
+            <div style="position:absolute; bottom:30px; width:100%;">
+                <div id="divStatus" style="position:absolute;bottom:30px;text-shadow:0px 0px;color:white;padding-left:15%;padding-right:15%;"></div>
+                <div id="photoSubmitButtons">
+                    <a data-role="button" class="fm_grayBtn_s" style="margin:0 auto;" onclick="FmMobile.moviePreviewPg.onDoAgainBtnClick()">再來一次</a>
+                    <div style="width:100%; height: 10px;"></div>
+                    <a data-role="button" id="submitPhotoBtn" class="fm_yellowBtn_s" style="margin:0 auto;" onclick="FmMobile.moviePreviewPg.onSubmitBtnClick()">提交</a>
+                </div>
+            </div>
+		</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+  <title>Feltmeng Test Page</title>
+  <meta charset="utf-8"/>
+  <meta property="og:title" content="Cosplay" />
+  <meta property="og:type" content="activity" />
+  <meta property="og:url" content="http://www.feltmeng.com/gab_test" />
+  <meta property="og:image" content="http://www.feltmeng.com/feltmeng_s.png" />
+  <meta property="og:site_name" content="Star" />
+  <meta property="fb:admins" content="100004053532907" />
+  <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script type="text/javascript" src = "fb.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <h1>¹Ú½º with Facebook</h1>
+        <div id="auth-status">
+            <div id="auth-loggedout">
+              <a href="#" id="auth-loginlink">Login</a>
+            </div>
+            <div id="auth-loggedin" style="display:none">
+              Hi, <span id="auth-displayname"></span>  
+            (<a href="#" id="auth-logoutlink">logout</a>)
+          </div>
+        </div>
+        <br>
+        <iframe id="vframe" width="560" height="315" src="http://www.youtube.com/embed/bbC4XG-L1sE" frameborder="0" allowfullscreen></iframe>
+        <!-- <form id="postV">
+          Video URL<input type="text" name="video_url" id="videoUrl" /><br />
+          <button type="button" value="post" onclick="postOn()">post</button>
+        </form> -->
+        <a href="#" onclick="postOn()" id="fbshare"><img src="fb_share.jpg" width="60" height="20">
+        <!-- <div class="fb-like" id="fblike" data-href="http://www.feltmeng.com/gab_test" data-send="true" data-width="450" data-show-faces="true"></div> -->
+        <br>
+        <p>
+        <img src="feltmeng.png"><br>
+    <!-- <div class="fb-comments" data-href="http://feltmeng.com/gab_test" data-num-posts="20" data-width="470"></div> -->
+</body>
+</html>

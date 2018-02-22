@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>會員註冊</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="mobileinit.js"></script>
+        <script src="jstorage.min.js"></script>
+        <!-- <script src="assets/js/custom-jqm-transitions.js"></script> -->
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    </head>
+<body class="container">
+    <div data-role="page" id="signupPg">
+        <div data-role="header">
+            <h1>會員註冊</h1>
+        </div>
+        <div data-role="content">
+            <form action="#" method="POST">
+            <div data-role="fieldcontainer">
+                <label for="memberID">帳號</label>
+                <input type="text" name="memberID" id="memberID" required placeholder="輸入帳號">
+                <label for="password">密碼</label>
+                <input type="password" name="password" id="password" required  placeholder="輸入密碼">
+                <label for="repassword">再次確認</label>
+                <input type="password" name="repassword" id="repassword" required placeholder="輸入密碼">
+                <label for="email">EMail</label>
+                <input type="email" name="email" id="email" required placeholder="ex: XXX@email.com" >
+                <label for="mPhone">手機</label>
+                <input type="text" name="mPhone" id="mPhone" required placeholder="輸入手機" >
+                <button type="submit" id="signupBtn" onclick="FmMobile.signupPg.signupReq()">註冊</button>
+            </div>
+            </form>
+        </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+    
+</body>
+</html>

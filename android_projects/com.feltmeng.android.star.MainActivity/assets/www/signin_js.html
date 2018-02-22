@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>會員登入</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="mobileinit.js"></script>
+        <!-- <script src="assets/js/custom-jqm-transitions.js"></script> -->
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    </head>
+<body class="container">
+    <!-- Sign In Page-->
+    <div data-role="page" id="signinPg">
+        <div data-role="header">
+            <h1>會員登入</h1>
+        </div>
+        <div data-role="content">
+            <form action="#" id="signinForm">
+                <div data-role="fieldcontainer">
+                    <label for="memberID">帳號</label>
+                    <input type="text" name="memberID" id="memberID">
+                    <label for="password">密碼</label>
+                    <input type="password" name="password" id="password">
+                    <button type="submit" id="signinBtn" onclick="signinReq()">登入</button>
+                </div>
+            </form>
+        </div>
+            <div data-role="popup" id="failPopup">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p>Wrong User/Password
+            </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+    <!-- Menu Page  -->
+    <div data-role="page" id="homePg">
+        <div data-role="header">
+            <h1>選單</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" class="ui-listview">
+                <li><a href="production.html">影片製作</a></li>
+                <li><a href="reservation.html">播放預約</a></li>
+                <li><a href="#myVideoPg">我的影片</a></li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+    <!-- My Videos Page-->
+    <div data-role="page" id="myVideoPg">
+        <div data-role="header">
+            <h1>我的影片</h1>
+        </div>
+        <div data-role="content">
+           <h1>我的影片</h1>
+        </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+    <script>
+        var videoWorks = null;
+        $(document).bind("pagebeforeload pageload pageloadfailed pagebeforechange pagechange pagechangefailed pagebeforeshow pagebeforehide pageshow pagehide pagebeforecreate pagecreate pageinit pageremove updatelayout", function(e) {
+            console.log(e.type);
+        });
+        
+        $("#myVideoPg").bind( "pagebeforecreate", loadMyVideoPg);
+        
+        function loadMyVideoPg(event, data){
+            
+            var url = "http://localhost:3000/api/userProfile",
+                data = {};
+                
+            var videoList= $("<div>").attr("id", "videoList");
+            
+            $("#myVideoPg div:jqmData(role='content')").append(videoList);
+            
+            
+            
+            /*$.post(url, data, function(res){
+                
+            });*/
+            
+            for(var i=0; i < videoWorks.length; i++){
+            
+                var video = $("<iframe>").attr({
+                    id: "video"+i,
+                    src: videoWorks[i].url.youtube,
+                    width: 560,
+                    height: 315,
+                    frameborder: "0",
+                });
+                video.appendTo(videoList);
+            }
+                
+            console.log("loadMyVideoPg");
+        }
+        
+        function signinReq(){
+            var form = $('#signinForm'),
+                member = new Object(),
+                inputElements = $('input');
+                
+            
+            var memberID,
+                password,
+                url = "http://localhost:3000/api/signin",
+                data = {};
+                
+            for( var i=0; i < inputElements.length; i++){
+                member[inputElements[i].name] = inputElements[i].value;
+            }
+            
+            data = { "member":member };   // JSON.stringify(data) is unnecessary.
+            console.log( "Sending Data: " + JSON.stringify(member) );
+            
+            $.post(url, data, function(res){
+                
+                if(res.videoWorks){
+                    videoWorks = res.videoWorks;
+                    
+                    $.mobile.changePage($("#homePg"), {
+                       type: "get",
+                       changeHash: true,
+                       dataUrl: "home"
+                    });
+                    console.log("videoWorks: " + JSON.stringify(videoWorks) );
+                }else{
+                    $("#failPopup").popup("open");
+                }
+            });
+        }
+        
+    </script>
+</body>
+</html>

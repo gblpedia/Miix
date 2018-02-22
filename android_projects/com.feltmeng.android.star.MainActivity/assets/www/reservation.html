@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>播放預約</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="mobileinit.js"></script>
+        <!-- <script src="assets/js/custom-jqm-transitions.js"></script> -->
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    </head>
+<body class="container">
+    <div data-role="page" id="reservationPg">
+        <div data-role="header">
+            <h1>播放預約</h1>
+        </div>
+        <div data-role="content">
+            <!-- <form action="#" method="POST"> -->
+            <div data-role="fieldcontainer">
+                <label for="video_select">影片</label>
+                <select id="video_select" name="video_select">
+                </select>
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>播放日期</legend>
+                    
+                    <label for="reserved_month">月</label>
+                    <select name="reserved_month" id="reserved_month">
+                        <option value="0">Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">Mar</option>
+                        <option value="3">Apr</option>
+                        <option value="4">May</option>
+                        <option value="5">Jun</option>
+                        <option value="6">Jul</option>
+                        <option value="7">Aug</option>
+                        <option value="8">Sep</option>
+                        <option value="9">Oct</option>
+                        <option value="10">Nov</option>
+                        <option value="11">Dec</option>
+                    </select>
+
+                    <label for="reserved_date">日</label>
+                    <select name="reserved_date" id="reserved_date">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">13</option>
+                        <option value="13">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <label for="reserved_year">年</label>
+                    <select name="reserved_year" id="reserved_year">
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                    </select>
+                </fieldset>
+                <label for="reserved_time">播放時間</label>
+                <input type="time" name="reserved_time" id="reserved_time">
+                <button id="reserveBtn" onclick="FmMobile.reservationPg.reserve()">預約</button>
+            </div>
+            <!-- </form> -->
+        </div>
+        <div data-role="footer">
+            Copyright
+        </div>
+    </div>
+    
+</body>
+</html>

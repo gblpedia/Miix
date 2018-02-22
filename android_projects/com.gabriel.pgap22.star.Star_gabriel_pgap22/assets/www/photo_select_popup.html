@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/jquery-ui.css"/> 
+        <link rel="stylesheet" href="./css/jquery.mobile-1.2.0.css"/>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="./lib/cordova-2.2.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./lib/jquery-1.8.2.min.js"></script>
+        <script src="./lib/jquery-ui.js"></script>
+        <script src="./lib/ChildBrowser.js"></script>
+        <script src="./lib/json2.js"></script>
+        <script src="./lib/jstorage.min.js"></script>
+        <script src="./lib/kinetic-v4.0.5.min.js"></script>
+        <script src="./lib/lufylegend-1.5.0.js"></script>
+        <script src="./lib/exif.js"></script>
+        <script src="./lib/binaryajax.js"></script>
+        <!-- CUSTOM INITIALIZATION CODE -->
+        <script src="common.js"></script>
+        <script src="megapix-image-gz.js"></script>
+        <script src="photo_cropper.js"></script>
+        <script src="movie_preview_math.js"></script>
+        <script src="simple_analytics.js"></script>
+        <script src="fmWidgets.js"></script>
+        <script src="FBConnect.js"></script>
+        <script src="mobileinit.js"></script>
+        <script src="mobileinit_movie_gen.js"></script>
+        <script src="./lib/jquery.mobile-1.2.0.js"></script>
+        <link rel="stylesheet" href="./css/fm.css"/>
+    </head>
+<body class="container">
+    <!-- Photo Select Popup Page-->
+    <div data-role="page" id="photoSelectPopupPg">
+        <div data-role="content">
+			<div id="container"></div>
+			<button type="button" onclick="FmMobile.photoSelectPopupPg.onUseCameraBtnClick()">使用相機</button>	
+			<button type="button" onclick="FmMobile.photoSelectPopupPg.onUsePhotoAlbumBtnClick()">從相簿選擇</button>
+			<br>
+			<button type="button" >取消</button>
+		</div>
+    </div>
+    
+</body>
+</html>
